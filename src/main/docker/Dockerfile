@@ -1,6 +1,10 @@
 FROM openjdk
 
-VOLUME /tmp
-ADD maven/spring-boot-docker-0.0.1-SNAPSHOT.jar myapp.jar
-RUN sh -c 'touch /myapp.jar'
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/myapp.jar"]
+#ARG JAR_FILE=*.jar
+ARG JAR_FILE=maven/${project.build.finalName}.jar
+COPY ${JAR_FILE} app.jar
+
+#another way
+#ADD maven/${project.build.finalName}.jar app.jar
+
+ENTRYPOINT ["java","-jar","/app.jar"]
