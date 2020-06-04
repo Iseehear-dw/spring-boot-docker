@@ -17,3 +17,6 @@ push to docker hub public repository
 2.
 mvn clean install docker:build docker:push
 
+Cloning a repo from someone else's Github and pushing it to a repo on my Github
+https://stackoverflow.com/questions/18200248/cloning-a-repo-from-someone-elses-github-and-pushing-it-to-a-repo-on-my-github
+git remote set-url origin https://github.com/Iseehear-dw/spring-boot-docker.git
