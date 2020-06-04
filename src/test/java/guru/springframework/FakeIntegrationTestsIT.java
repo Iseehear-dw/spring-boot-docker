@@ -4,6 +4,7 @@ import org.junit.Test;
 
 /**
  * Created by jt on 3/23/17.
+ * must ene with IT for integration test
  */
 public class FakeIntegrationTestsIT {
 
