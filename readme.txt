@@ -19,4 +19,9 @@ mvn clean install docker:build docker:push
 
 Cloning a repo from someone else's Github and pushing it to a repo on my Github
 https://stackoverflow.com/questions/18200248/cloning-a-repo-from-someone-elses-github-and-pushing-it-to-a-repo-on-my-github
+1. go into D:\IdeaProjects\spring-boot-docker
 git remote set-url origin https://github.com/Iseehear-dw/spring-boot-docker.git
+
+
+2.
+git push -u origin master
